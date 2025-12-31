@@ -73,10 +73,10 @@ apt update && apt upgrade && apt install tur-repo && apt install git tor privoxy
 ### Kali/Termux Packege Install Comments
 
 ```
-apt update && apt upgrade -y
+sudo apt update
 ```
 ```
-apt install tur-repo git tor privoxy netcat-openbsd curl -y
+sudo apt install git tor privoxy netcat-openbsd curl -y
 ```
 ```
 apt install tur-repo -y
