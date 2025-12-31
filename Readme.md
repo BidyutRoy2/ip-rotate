@@ -85,10 +85,37 @@ git clone https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate
 ```
 sudo chmod +x setup.sh && sudo bash setup.sh
 ```
+### Scroll to the very bottom and add this line (include the space and the dot): forward-socks5t / 127.0.0.1:9050 . & remove the # the following lines
+
+<img width="727" height="340" alt="image" src="https://github.com/user-attachments/assets/e36f161a-928b-4c1d-8338-64f9269d3d09" />
+
+- Kali: `sudo nano /etc/privoxy/config`
+- Termux: `nano $PREFIX/etc/privoxy/config`
+
+### Configuring Privoxy is the final bridge that allows your standard web traffic (HTTP) to travel through the Tor network (SOCKS5)
+
+<img width="1005" height="499" alt="image" src="https://github.com/user-attachments/assets/897031f4-85bd-4f85-b397-5e260b4f3f30" />
+
+- Kali: `sudo nano /etc/privoxy/config`
+- Termux `nano $PREFIX/etc/privoxy/config`
+
+## To Save File (CTRL+X+Y)
+
+### Restart the service
+- Kali: `sudo systemctl restart privoxy`
+- Termux: `pkill privoxy && privoxy $PREFIX/etc/privoxy/config`
 
 ### Start tool command
 ```
 sudo chmod +x iprotate.sh && sudo bash iprotate.sh
+```
+
+### Test the Configuration
+```
+curl --proxy http://127.0.0.1:8118 https://check.torproject.org/api/ip
+```
+```
+sudo systemctl status tor
 ```
 
 ## If the command above gives you a "Could not get lock" error, it means the system still thinks another process is using the database. You can manually remove those lock files
