@@ -79,7 +79,7 @@ pkg install git tor privoxy netcat-openbsd curl -y
 sudo apt install git tor privoxy netcat-openbsd curl -y
 ```
 ```
-git https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate
+git clone https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate
 ```
 ```
 bash setup.sh
