@@ -108,7 +108,7 @@ sudo iptables -I INPUT -p tcp --dport 8118 -j ACCEPT
 ```
 
 ### Restart the service
-- Kali: `sudo systemctl restart privoxy`
+- Kali: `sudo systemctl restart privoxy` & `sudo systemctl restart tor`
 - Termux: `pkill privoxy && privoxy $PREFIX/etc/privoxy/config`
 
 ### Start tool command
