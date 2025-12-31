@@ -85,19 +85,19 @@ git clone https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate
 ```
 sudo chmod +x setup.sh && sudo bash setup.sh
 ```
-### Scroll to the very bottom and add this line (include the space and the dot): forward-socks5t / 127.0.0.1:9050 . & remove the # the following lines
+### Remove the # the following lines , (SOCKS5) , Change listens Address
 
+- Kali:
+```
+sudo nano /etc/privoxy/config
+```
+- Termux
+```
+nano $PREFIX/etc/privoxy/config
+```
 <img width="727" height="340" alt="image" src="https://github.com/user-attachments/assets/e36f161a-928b-4c1d-8338-64f9269d3d09" />
-
-- Kali: `sudo nano /etc/privoxy/config`
-- Termux: `nano $PREFIX/etc/privoxy/config`
-
-### Configuring Privoxy is the final bridge that allows your standard web traffic (HTTP) to travel through the Tor network (SOCKS5)
-
 <img width="1005" height="499" alt="image" src="https://github.com/user-attachments/assets/897031f4-85bd-4f85-b397-5e260b4f3f30" />
-
-- Kali: `sudo nano /etc/privoxy/config`
-- Termux `nano $PREFIX/etc/privoxy/config`
+<img width="1045" height="491" alt="image" src="https://github.com/user-attachments/assets/09cae6e1-a826-47d4-8fb5-e8f9beb29903" />
 
 ## To Save File (CTRL+X+Y)
 
