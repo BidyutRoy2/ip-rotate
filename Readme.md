@@ -78,15 +78,17 @@ pkg install git tor privoxy netcat-openbsd curl -y
 ```
 sudo apt install git tor privoxy netcat-openbsd curl -y
 ```
+### Clone Linux/termux
 ```
 git clone https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate
 ```
 ```
-sudo bash setup.sh
+sudo chamod +x setup.sh && sudo bash setup.sh
 ```
+
 ### Start tool command
 ```
-sudo bash iprotate.sh
+sudo chamod +x iprotate.sh && sudo bash iprotate.sh
 ```
 
 ## If the command above gives you a "Could not get lock" error, it means the system still thinks another process is using the database. You can manually remove those lock files
