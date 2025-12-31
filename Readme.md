@@ -88,3 +88,33 @@ bash setup.sh
 ```
 bash iprotate.sh
 ```
+
+## If the command above gives you a "Could not get lock" error, it means the system still thinks another process is using the database. You can manually remove those lock files
+
+### Kali Linux
+```
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/lib/dpkg/lock
+sudo dpkg --configure -a
+```
+```
+sudo apt update --fix-missing
+sudo apt install -f
+```
+
+### Termux
+```
+rm $PREFIX/var/lib/dpkg/lock-frontend
+rm $PREFIX/var/lib/dpkg/lock
+dpkg --configure -a
+```
+```
+pkg update
+pkg install -f
+```
+
+
+
+
+
+
