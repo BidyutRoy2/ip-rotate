@@ -75,11 +75,13 @@ apt update && apt upgrade && apt install tur-repo && apt install git tor privoxy
 ```
 sudo apt update
 ```
+### For Termux
+```
+pkg install git tor privoxy netcat-openbsd curl -y
+```
+### For Kali
 ```
 sudo apt install git tor privoxy netcat-openbsd curl -y
-```
-```
-apt install tur-repo -y
 ```
 ```
 git https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate
