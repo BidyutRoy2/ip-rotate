@@ -83,12 +83,12 @@ sudo apt install git tor privoxy netcat-openbsd curl -y
 git clone https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate
 ```
 ```
-sudo chamod +x setup.sh && sudo bash setup.sh
+sudo chmod +x setup.sh && sudo bash setup.sh
 ```
 
 ### Start tool command
 ```
-sudo chamod +x iprotate.sh && sudo bash iprotate.sh
+sudo chmod +x iprotate.sh && sudo bash iprotate.sh
 ```
 
 ## If the command above gives you a "Could not get lock" error, it means the system still thinks another process is using the database. You can manually remove those lock files
