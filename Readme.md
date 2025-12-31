@@ -64,11 +64,6 @@ All packaged in a simple tool with beginner-friendly configuration and advanced 
 > - The developer, **Alok Thakur**, is **not responsible** for any misuse, damage, or legal consequences arising from the use of this tool.
 >
 > You are solely responsible for your actions.
----
-### Termux Full Install and Setup 
-```
-apt update && apt upgrade && apt install tur-repo && apt install git tor privoxy netcat-openbsd curl && git clone https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate && bash setup.sh && bash iprotate.sh
-```
 
 ### Kali/Termux Packege Install Comments
 
