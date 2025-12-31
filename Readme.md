@@ -98,8 +98,14 @@ nano $PREFIX/etc/privoxy/config
 <img width="727" height="340" alt="image" src="https://github.com/user-attachments/assets/e36f161a-928b-4c1d-8338-64f9269d3d09" />
 <img width="1005" height="499" alt="image" src="https://github.com/user-attachments/assets/897031f4-85bd-4f85-b397-5e260b4f3f30" />
 <img width="1045" height="491" alt="image" src="https://github.com/user-attachments/assets/09cae6e1-a826-47d4-8fb5-e8f9beb29903" />
+<img width="1049" height="480" alt="image" src="https://github.com/user-attachments/assets/da6c6e61-21d6-4eca-99a9-379aa2b88653" />
 
 ## To Save File (CTRL+X+Y)
+
+### Open Kali's Firewall
+```
+sudo iptables -I INPUT -p tcp --dport 8118 -j ACCEPT
+```
 
 ### Restart the service
 - Kali: `sudo systemctl restart privoxy`
