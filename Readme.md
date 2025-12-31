@@ -82,7 +82,7 @@ apt install tur-repo git tor privoxy netcat-openbsd curl -y
 apt install tur-repo -y
 ```
 ```
-git clone https://github.com/thakur2309/ip-rotate.git && cd ip-rotate
+git https://github.com/BidyutRoy2/ip-rotate.git && cd ip-rotate
 ```
 ```
 bash setup.sh
